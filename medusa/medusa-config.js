@@ -121,7 +121,6 @@ module.exports = defineConfig({
     backendUrl:
       process.env.BACKEND_URL ?? "https://sofa-society-starter.medusajs.app",
     storefrontUrl: process.env.STOREFRONT_URL,
-    serve: false,
   },
   projectConfig: {
     databaseUrl: process.env.DATABASE_URL,
