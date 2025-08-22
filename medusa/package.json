@@ -14,7 +14,7 @@
   ],
   "scripts": {
     "build": "medusa build",
-    "prestart": "yarn medusa db:migrate",
+    "prestart": "yarn medusa db:migrate && yarn seed",
     "seed": "medusa exec ./src/scripts/seed.ts",
     "start": "medusa start",
     "dev": "medusa develop",
@@ -25,6 +25,7 @@
   },
   "dependencies": {
     "@agilo/medusa-analytics-plugin": "^1.1.0",
+    "@medusajs/admin": "^7.1.18",
     "@medusajs/admin-sdk": "2.8.8",
     "@medusajs/cli": "2.8.8",
     "@medusajs/framework": "2.8.8",
